@@ -4,7 +4,7 @@ validate json template
     $ packer validate sample_build.json
 
 perform packer build
-    -pass in keys as variables on the command line
+    pass in keys as variables on the command line
 
     $ packer build \
     > -var 'aws_access_key=access_key' \
