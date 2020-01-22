@@ -1,7 +1,7 @@
 # sample_build
 
 validate json template
-    $ packer validate sample_build.json
+    > $ packer validate sample_build.json
 
 perform packer build
     pass in keys as variables on the command line
