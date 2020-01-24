@@ -12,7 +12,7 @@
     "source_ami_filter": {
       "filters": {
         "virtualization-type": "hvm",
-        "name": "125523088429/Fedora-Cloud-Base-31-20200120.0.x86_64-hvm-us-west-2-gp2-0",
+        "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
         "root-device-type": "ebs"
       },
       "owners": ["099720109477"],
