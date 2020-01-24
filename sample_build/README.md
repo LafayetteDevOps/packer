@@ -1,4 +1,4 @@
-# sample_build
+# example build
 
 validate json template
     
