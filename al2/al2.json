@@ -34,6 +34,10 @@
                 "sudo amazon-linux-extras install ansible2",
 		"ansible --version"
             ]
-        }
+        },
+	{
+  	    "type": "ansible-local",
+	    "playbook_file": "play.yml"
+	}
     ]
 }
