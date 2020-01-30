@@ -12,7 +12,7 @@
     "source_ami": "ami-7105540e",
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
-    "ami_name": "packer-example {{timestamp}}"
+    "ami_name": "packer-demo {{timestamp}}"
   }],
   "provisioners": [
 	{
@@ -31,7 +31,8 @@
             "type": "shell",
             "inline":[
 		"echo Ansible and associated dependencies will be istalled onto the ami",    
-                "sudo amazon-linux-extras install ansible2"
+                "sudo amazon-linux-extras install ansible2",
+		"ansible --version"
             ]
         }
     ]
