@@ -15,10 +15,23 @@
     "ami_name": "packer-example {{timestamp}}"
   }],
   "provisioners": [
+	{
+            "type": "file",
+            "source": "./welcome.txt",
+            "destination": "/home/ec2-user/"
+        },
+	{
+            "type": "shell",
+            "inline":[
+                "ls -al /home/ec2-user",
+                "cat /home/ec2-user/welcome.txt"
+            ]
+        },
         {
             "type": "shell",
             "inline":[
-                "sudo yum update -y"
+		"echo Ansible and associated dependencies will be istalled onto the ami",    
+                "sudo amazon-linux-extras install ansible2"
             ]
         }
     ]

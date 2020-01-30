@@ -1,0 +1,9 @@
+
+Welcome to Packer by Hashicorp! 
+
+Packer uses a JSON array to encompass a builder then a series of JSON objects
+as provisioners.  The provisioners can be as simple 'file', more complicated 
+like the shell to execute commands in BASH or even much more sophisticated 
+like Configuration management tools like Ansible or Salt! 
+
+How cool is this tool?!
