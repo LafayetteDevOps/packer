@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  connection: local
+  vars:
+
+  tasks:
+  # display the varible data type  
+  - name: hostname and operating system distribution
+    debug:
+      msg: "This system, {{ ansible_hostname }}, is running {{ ansible_distribution}} {{ ansible_distribution_version }} ."
+
