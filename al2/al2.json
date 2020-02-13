@@ -17,14 +17,14 @@
   "provisioners": [
 	{
             "type": "file",
-            "source": "./welcome.txt",
+            "source": "./demo.txt",
             "destination": "/home/ec2-user/"
         },
 	{
             "type": "shell",
             "inline":[
                 "ls -al /home/ec2-user",
-                "cat /home/ec2-user/welcome.txt"
+                "cat /home/ec2-user/demo.txt"
             ]
         },
         {
