@@ -2,7 +2,8 @@
 {
   "variables": {
     "aws_access_key": "",
-    "aws_secret_key": ""
+    "aws_secret_key": "",
+    "service_account_json": "~/Downloads/integral-kiln-268103-68f8b61200f1.json"
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -16,9 +17,9 @@
   },
     {
       "type": "googlecompute",
-      "account_file": "account.json",
+      "account_file": "integral-kiln-268103-68f8b61200f1.json",
       "project_id": "my project",
-      "source_image": "debian-7-wheezy-v20150127",
+      "source_image": "centos-8-v20200205",
       "ssh_username": "packer",
       "zone": "us-central1-a"
     }],
